@@ -19,6 +19,20 @@ h2 {
 
 /* Classes that you might find useful */
 /* You may also have to implement your own classes */
+.label:hover {
+  font-size:large;
+  color: red;
+}
+
+
+.roman {
+  display: flex;
+}
+
+
+.mex {
+  display:flex;
+}
 
 .flag {
   height: 300px;
@@ -29,13 +43,19 @@ h2 {
 
 .twovert {
   height: 50%;
+  }
+
+.threevert { 
+  height: 33.33%;
 }
 
-.threevert {
+.red {
+ background-color: red;
 }
 
 .threehoriz {
-  width: 33.3%;
+  display: flex;
+  flex-direction: row;
 }
 
 .narrow {
@@ -59,6 +79,11 @@ h2 {
 
 /* QUESTION 1 */
 
+
+.red {
+  background-color:red;
+}
+
 .orange {
   background-color: orange;
 }
@@ -75,7 +100,7 @@ h2 {
   background-color: blue;
 }
 
-.lightblue {
+.light-blue {
   background-color: lightblue;
 }
 
@@ -87,23 +112,35 @@ h2 {
   background-color: #fff;
 }
 
+#white {
+  background-color: white;
+}
+
 .black {
   background-color: #000;
 }
 
 /* BEGIN QUESTION 2 */
 
+.thailand-flag {
+  width: 100px
+}
 .thailand-red {
-  /* TODO */
+  background-color:#B5002D;
+  height: 15%;
 }
 
 .thailand-white {
-  /* TODO */
+  background-color:white;
+  height: 15%;
 }
 
 .thailand-blue {
-  /* TODO */
+  background-color:#2E2A4C;
+  height: 40%;
 }
+
+
 
 /* END QUESTION 2 */
 
@@ -111,14 +148,20 @@ h2 {
 
 .romania-blue {
   background-color: #002c84;
+  width: 100%;
+  height: 100%;
 }
 
 .romania-yellow {
   background-color: #ffcf00;
+  width: 100%;
+  height: 100%;
 }
 
 .romania-red {
   background-color: #e10017;
+  width: 100%;
+  height: 100%;
 }
 
 /* END QUESTION 3 */
@@ -126,15 +169,50 @@ h2 {
 /* QUESTION 4 */
 .mexico-green {
   background-color: #006341;
+  width: 100%;
+  height: 100%;
+}
+
+.mexico-white {
+  background-color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .mexico-img {
-  /* TODO */
+  max-height: 100px;
+  max-width: 100px;
+  /* width: 60%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+  justify-content:center;
+  display: table-cell; */
+  align-self: center;
+  /* vertical-align: middle */
+  /* align-content:center;
+  height: 100%;
+  display: flex;
+  vertical-align: middle; */
+}
+
+.center {
+  display: flex;
+  /* vertical-align: middle; */
+  align-self: center;
+  
 }
 
 .mexico-red {
   background-color: #ce1126;
+  width: 100%;
+  height: 100%;
 }
+
+#margins {
+  margin-right: 10px;
+}
+
 
 /* QUESTION 6 */
 .margin-container {
@@ -144,12 +222,13 @@ h2 {
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
+  margin-left: 10px;
 }
 
 /* For margin practice */
 .flag1 {
   background-color: red;
-  /* TODO */
+  /* TODO 
 }
 
 .flag2 {
@@ -161,5 +240,6 @@ h2 {
   box-sizing: border-box;
   background-color: lightblue;
   background-clip: content-box, padding-box;
-  /* TODO */
+  padding-top:60px;
+  padding-left:60px;
 }
